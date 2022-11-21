@@ -1,0 +1,37 @@
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// COLORES CUSTOM
+$custom-colors: (
+    "custom-color1": hsl(225, 100%, 98%),
+    "custom-color2": hsl(224, 23%, 55%),
+    "custom-color3": hsl(223, 47%, 23%),
+    "custom-color4": hsl(225, 100%, 94%),
+    "custom-color5": hsl(245, 75%, 52%),
+);
+
+// AGREGAR COLORES CUSTOM
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// AGREGO FONT-WEIGHT CUSTOM
+$font-weight-normal: 500;
+$font-weight-semibold: 700;
+$font-weight-bold: 900;
+
+//IAMGEN DE FONDO
+.fondo {
+    background: url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+// WIDTH DE CARDS
+.width-card {
+    width: clamp(320px, 90%, 400px);
+}
+
+$font-family-sans-serif: 'Red Hat Display', sans-serif;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
