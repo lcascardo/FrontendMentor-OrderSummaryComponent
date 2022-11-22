@@ -23,8 +23,8 @@ $font-weight-bold: 900;
 .fondo {
     background: url("../images/pattern-background-mobile.svg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    
 }
 
 // WIDTH DE CARDS
